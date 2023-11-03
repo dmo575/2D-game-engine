@@ -13,9 +13,16 @@ Game engine made in C++ with SDL2.
 - Install SDL2 development libraries (we will be using SDL2, mixer, ttf and image)
     - `sudo dnf install SDL2-devel SDL2_mixer-devel SDL2_ttf-devel SDL2_image-devel`
     - If for some reason your SDL libraries are not located at `/usr/include/SDL2`, please update the `includePath` property inside **c_cpp_properties.json** with the correct path.
-
+- Create a build directory inside the project directory
+    - `mkdir build`
+- Run the cmake command **inside the build directory you just created**. This  will generate CMake files using the CMakeLists.txt on the parent directory.
+    - `cd build`
+    - `cmake ..`
 - Go inside the build folder and run the make command
     - `make`
+- Copy the Resources directory inside the build folder.
+    - If you are on the root directory:
+        - `cp -rf Resources build`
 - Inside the build directory, run the application by executing this command:
     - `./app`
 
