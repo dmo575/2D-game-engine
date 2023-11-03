@@ -517,15 +517,15 @@ void Engine::LoadDemo_2()
     platformT->SetPos(96, 96);
 
 
-    Entity* eTL = MakeEnt("ent_Black", "SP_SOLDIER_S.png", posTL, Rect{ 0,0,70,117 }, 0.25f, true);
-    Entity* eT =  MakeEnt("ent_Blue", "SP_SOLDIER_S.png", posT, Rect{ 0,0,70,117 }, 0.25f, true);
-    Entity* eTR = MakeEnt("ent_Green", "SP_SOLDIER_S.png", posTR, Rect{ 0,0,70,117 }, 0.25f, true);
-    Entity* eL =  MakeEnt("ent_Orange", "SP_SOLDIER_S.png", posL, Rect{ 0,0,70,117 }, 0.25f, true);
-    Entity* eC =  MakeEnt("ent_Purple", "SP_SOLDIER_S.png", posCenter, Rect{ 0,0,70,117 }, 0.25f, true);
-    Entity* eR =  MakeEnt("ent_Red", "SP_SOLDIER_S.png", posR, Rect{ 0,0,70,117 }, 0.25f, true);
-    Entity* eBL = MakeEnt("ent_White", "SP_SOLDIER_S.png", posBL, Rect{ 0,0,70,117 }, 0.25f, true);
-    Entity* eB =  MakeEnt("ent_Yellow", "SP_SOLDIER_S.png", posB, Rect{ 0,0,70,117 }, 0.25f, true);
-    Entity* eBR = MakeEnt("ent_DarkBlue-ish", "SP_SOLDIER_S.png", posBR, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eTL = MakeEnt("ent_Black", "SP_Soldier_S.png", posTL, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eT =  MakeEnt("ent_Blue", "SP_Soldier_S.png", posT, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eTR = MakeEnt("ent_Green", "SP_Soldier_S.png", posTR, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eL =  MakeEnt("ent_Orange", "SP_Soldier_S.png", posL, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eC =  MakeEnt("ent_Purple", "SP_Soldier_S.png", posCenter, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eR =  MakeEnt("ent_Red", "SP_Soldier_S.png", posR, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eBL = MakeEnt("ent_White", "SP_Soldier_S.png", posBL, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eB =  MakeEnt("ent_Yellow", "SP_Soldier_S.png", posB, Rect{ 0,0,70,117 }, 0.25f, true);
+    Entity* eBR = MakeEnt("ent_DarkBlue-ish", "SP_Soldier_S.png", posBR, Rect{ 0,0,70,117 }, 0.25f, true);
 
     UC_Tester* testerTL = eTL->AddComponent<UC_Tester>(new UC_Tester(KeyCode::k_Keypad_7, Color::PreDefined::k_Black));
     UC_Tester* testerT = eT->AddComponent<UC_Tester>(new UC_Tester(KeyCode::k_Keypad_8, Color::PreDefined::k_Blue));
@@ -861,7 +861,7 @@ void Engine::LoadDemo_6_GameOver()
     auto mainMenuListener = m_pEntityManager->AddEntity("LevelListener");
     auto mainMenuListenerComp = mainMenuListener->AddComponent(new UC_LoadListener("demo_final_mainMenu", dynamic_cast<IEventSender*>(mainMenuBtn)));
     mainMenuBtn->SetPos(mainMenuPos);
-    mainMenuBtn->SetPressImg("SP_Button.PNG", rect);
+    mainMenuBtn->SetPressImg("SP_Button.png", rect);
     auto mainMenuBtnText = mainMenuEnt->GetComponent<EC_Text>();
     mainMenuBtnText->SetText("Main menu");
     mainMenuBtnText->SetColor(Color::PreDefined::k_Blue);
@@ -873,7 +873,7 @@ void Engine::LoadDemo_6_GameOver()
     auto replayListener = m_pEntityManager->AddEntity("LevelListener");
     auto replayListenerComp = replayListener->AddComponent(new UC_LoadListener("demo_4", dynamic_cast<IEventSender*>(replayBtn)));
     replayBtn->SetPos(replayPos);
-    replayBtn->SetPressImg("SP_Button.PNG", rect);
+    replayBtn->SetPressImg("SP_Button.png", rect);
     auto replayBtnText = replayEnt->GetComponent<EC_Text>();
     replayBtnText->SetText("Replay");
     replayBtnText->SetColor(Color::PreDefined::k_Blue);
@@ -885,7 +885,7 @@ void Engine::LoadDemo_6_GameOver()
     auto quitListener = m_pEntityManager->AddEntity("LevelListener");
     auto quitListenerComp = quitListener->AddComponent(new UC_LoadListener("demo_1", dynamic_cast<IEventSender*>(quitBtn), true));
     quitBtn->SetPos(quitPos);
-    quitBtn->SetPressImg("SP_Button.PNG", rect);
+    quitBtn->SetPressImg("SP_Button.png", rect);
     auto quitBtnText = quitEnt->GetComponent<EC_Text>();
     quitBtnText->SetText("Quit");
     quitBtnText->SetColor(Color::PreDefined::k_Blue);
@@ -935,7 +935,7 @@ void Engine::LoadDemo_6_YouWin()
     auto mainMenuListener = m_pEntityManager->AddEntity("LevelListener");
     auto mainMenuListenerComp = mainMenuListener->AddComponent(new UC_LoadListener("demo_final_mainMenu", dynamic_cast<IEventSender*>(mainMenuBtn)));
     mainMenuBtn->SetPos(mainMenuPos);
-    mainMenuBtn->SetPressImg("SP_Button.PNG", rect);
+    mainMenuBtn->SetPressImg("SP_Button.png", rect);
     auto mainMenuBtnText = mainMenuEnt->GetComponent<EC_Text>();
     mainMenuBtnText->SetText("Main menu");
     mainMenuBtnText->SetColor(Color::PreDefined::k_Blue);
@@ -949,7 +949,7 @@ void Engine::LoadDemo_6_YouWin()
     auto quitListener = m_pEntityManager->AddEntity("LevelListener");
     auto quitListenerComp = quitListener->AddComponent(new UC_LoadListener("demo_1", dynamic_cast<IEventSender*>(quitBtn), true));
     quitBtn->SetPos(replayPos);
-    quitBtn->SetPressImg("SP_Button.PNG", rect);
+    quitBtn->SetPressImg("SP_Button.png", rect);
     auto quitBtnText = quitEnt->GetComponent<EC_Text>();
     quitBtnText->SetText("Quit");
     quitBtnText->SetColor(Color::PreDefined::k_Blue);
