@@ -1,3 +1,0 @@
-/home/dmo/projects/2d_engine/build/CMakeFiles/app.dir
-/home/dmo/projects/2d_engine/build/CMakeFiles/edit_cache.dir
-/home/dmo/projects/2d_engine/build/CMakeFiles/rebuild_cache.dir
