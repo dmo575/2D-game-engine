@@ -3,7 +3,7 @@ Game engine made in C++ with SDL2.
 
 # WARNING - PLEASE READ:
 
-## **This is a work in progress. I am currently fixing bugs for this project**
+## **This is a work in progress. I am currently fixing bugs for this project so that it runs well on Linux**
 
 **I originally made this project on Windows, for Windows. I used some windows exclusive libraries to implement the saving and loading. This repo contains a modified version of this project that works on LINUX which is what I am using now. For this Linux version I got rid of the in-game saving and loading features. Please do not try to save and load while in-game, it won't work and it might break. You can perfectly load the levels from the main menu.**
 
