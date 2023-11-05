@@ -3,9 +3,9 @@ Game engine made in C++ with SDL2.
 
 # WARNING - PLEASE READ:
 
-## **This is a work in progress. I am currently changing this code to work on Linux only for now, but the work is not completed. I recommend avoiding Demo 2.**
+## **This is a work in progress. PLEASE watch the [VIDEO](https://youtu.be/ljVjTXEBvMw) about the project if you want to know what it looks like and what you can and can't do with it.**
 
-**I originally made this project on Windows, for Windows. I used some windows exclusive libraries to implement the saving and loading. This repo contains a modified version of this project that works on LINUX which is what I am using now. For this Linux version I got rid of the in-game saving and loading features. Please do not try to save and load while in-game, it won't work and it might break. You can perfectly load the levels from the main menu.**
+## You can also check the original video I made a while back on Windows [here](https://www.youtube.com/watch?v=3SOYCM9kgbw). **I originally made this project on Windows, for Windows. This project is just me messing around with the code I wrote back then, trying to make it work on Linux.**
 
 
 ## To get this running on Linux:
@@ -29,11 +29,7 @@ Game engine made in C++ with SDL2.
 - Inside the build directory, run the application by executing this command:
     - `./app`
 
-## Video (Linux version, this code):
-## [LINK](https://youtu.be/ljVjTXEBvMw)
 
-## Video (Windows version):
-## [LINK](https://www.youtube.com/watch?v=3SOYCM9kgbw)
 
 # About this project
 This was a huge project I did a while ago for a fundamentals of game engines class. I decided to implement all that crossed my mind and ended up building this cool little 2D/2.5D game engine.
