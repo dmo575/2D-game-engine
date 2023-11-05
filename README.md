@@ -29,11 +29,11 @@ Game engine made in C++ with SDL2.
 - Inside the build directory, run the application by executing this command:
     - `./app`
 
-## Video (Windows version):
-[LINK](https://www.youtube.com/watch?v=3SOYCM9kgbw)
-
 ## Video (Linux version, this code):
-Coming up soon ...
+## [LINK](https://youtu.be/ljVjTXEBvMw)
+
+## Video (Windows version):
+## [LINK](https://www.youtube.com/watch?v=3SOYCM9kgbw)
 
 # About this project
 This was a huge project I did a while ago for a fundamentals of game engines class. I decided to implement all that crossed my mind and ended up building this cool little 2D/2.5D game engine.
@@ -113,3 +113,11 @@ Program quit:
 - There are two event systems, one that runs at the end of update and one that triggers the event instantly.
 - Basic save/load support.
 - Several other features that escape me, mostly component level features that help you use the components in various ways (scaling, looping animations, animation clips, etc...)
+
+## About the particle pool:
+Here you can see a test I made to check how the pool in the particle system behaved in various settings.
+- Column 1 is set up to not use a pool, so particle entities are always instantiated when needed.
+- Column 2 is set to have a pool of up to 500 particles
+- Column 3 is set to let the engine manage the pool
+I am spawning as many particles as I can every frame.
+![Image](pool_test.png)
