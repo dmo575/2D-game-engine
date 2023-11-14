@@ -7,7 +7,7 @@ Game engine made in C++ with SDL2.
 
 ## You can also check the original video I made a while back on Windows [here](https://www.youtube.com/watch?v=3SOYCM9kgbw). **I originally made this project on Windows, for Windows. This project is just me messing around with the code I wrote back then, trying to make it work on Linux.**
 
-### **That being said, you should be able to create your own content with the engine if you stay away from the "safe references" feature. For now the best and only place to learn how to use the engine are the demos that come with it.**
+### **That being said, you should be able to create your own content with the engine if you stay away from the "safe references" and any saving and loading features. For now the best and only place to learn how to use the engine are the demos that come with it.**
 
 
 ## To get this running on Linux:
