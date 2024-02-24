@@ -82,18 +82,18 @@ Program starts:
 - Initialize modules
 - Load Level
 ‍
-While(running):
-- Update Input
-    - Get delta
-    - Update Entities (update, delete, add; these three happen separately and in that order)
-    - Update Colliders (this does not happen every frame, you can update this at its own rate)
-    - Should we quit? (If true then we exit this loop)
-    - Run trough events (You can add events to this event system as you go and at the end of the update the program goes trough all of them and solves them one by one. There is also another event system where the events get solved instantly)
-- Render
-    - Draw Sprites (draws all the sprites)
-    - Draw Objects (draws any basic shapes like lines and rectangles on top of the sprites)
-    - Draw Text
-    - Draw Shapes (draws any shape; a shape is a quad or a collection of quads. You can see this in the demos.The gun is a shape)
+- While(running):
+    - Update Input
+        - Get delta
+        - Update Entities (update, delete, add; these three happen separately and in that order)
+        - Update Colliders (this does not happen every frame, you can update this at its own rate)
+        - Should we quit? (If true then we exit this loop)
+        - Run trough events (You can add events to this event system as you go and at the end of the update the program goes trough all of them and solves them one by one. There is also another event system where the events get solved instantly)
+    - Render
+        - Draw Sprites (draws all the sprites)
+        - Draw Objects (draws any basic shapes like lines and rectangles on top of the sprites)
+        - Draw Text
+        - Draw Shapes (draws any shape; a shape is a quad or a collection of quads. You can see this in the demos.The gun is a shape)
 
 Program quit:
 - De-Init anything that needs de-initialization.
