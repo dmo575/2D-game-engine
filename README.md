@@ -1,13 +1,15 @@
-# 2D-game-engine
-Game engine made in C++ with SDL2.
+## About
+A project that showcases a game loop and many tools that you can use (Collision, File management, Animation, ACS, ...). Also provides you with a way to create your own scripts.
 
-# PLEASE READ:
+Below you can find some notes, a series of steps to follow if you want to get it running and lastly more detail comments on what the project is about.
 
-## **This is a work in progress. PLEASE watch the [VIDEO](https://youtu.be/ljVjTXEBvMw) about the project if you want to know what it looks like and what you can and can't do with it.**
+### PLEASE READ:
 
-## You can also check the original video I made a while back on Windows [here](https://www.youtube.com/watch?v=3SOYCM9kgbw). **I originally made this project on Windows, for Windows. This project is just me messing around with the code I wrote back then, trying to make it work on Linux.**
+**This is a work in progress. PLEASE watch the [VIDEO](https://youtu.be/ljVjTXEBvMw) about the project if you want to know what it looks like and what you can and can't do with it.**
 
-### **That being said, you should be able to create your own content with the engine if you stay away from the "safe references" and any saving and loading features. For now the best and only place to learn how to use the engine are the demos that come with it.**
+**You can also check the original video I made a while back on Windows [here](https://www.youtube.com/watch?v=3SOYCM9kgbw). I originally made this project on Windows, for Windows. This project is just me messing around with the code I wrote back then, trying to make it work on Linux.**
+
+**That being said, you should be able to create your own content with the engine if you stay away from the "safe references" and any saving and loading features. For now the best and only place to learn how to use the engine are the demos that come with it.**
 
 
 ## To get this running on Linux:
@@ -33,13 +35,13 @@ Game engine made in C++ with SDL2.
 
 
 
-# About this project
-This was a huge project I did a while ago for a fundamentals of game engines class. I decided to implement all that crossed my mind and ended up building this cool little 2D/2.5D game engine.
+## About this project
+This was a project I did a while ago for a fundamentals of game engines class. I decided to implement all that crossed my mind and ended up building this cool little 2D/2.5D game engine.
 
 I initially made it on Windows using Visual Studio, so making it work on Linux with VSCode + gcc has been a really fun journey. This is the first compiled application I make work on Linux and it has been a great intro snippet on things like CMake, how libraries work on Linux (no .dlls) and path differences between Linux and Windows.
 
 
-## Structure of the Engine:
+## Structure of the engine:
 The Engine is divided into different building pieces (explained below) and it is decoupled from the SDL library via interfaces.
 
 ## Modules:
